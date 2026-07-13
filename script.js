@@ -12,6 +12,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Mobile Menu Toggle
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const closeBtn = document.querySelector('.close-menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+mobileBtn.addEventListener('click', () => {
+    mobileNav.classList.add('open');
+});
+
+closeBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+});
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+    });
+});
+
 // Scroll Reveal Animation (Intersection Observer)
 const revealElements = document.querySelectorAll('.reveal');
 
@@ -19,7 +39,7 @@ const revealCallback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            observer.unobserve(entry.target); // Only animate once
+            observer.unobserve(entry.target); 
         }
     });
 };
@@ -47,5 +67,23 @@ cards.forEach(card => {
         const glow = card.querySelector('.card-glow');
         glow.style.left = `${x}px`;
         glow.style.top = `${y}px`;
+    });
+});
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        // Close other items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+                otherItem.classList.remove('active');
+            }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
     });
 });
