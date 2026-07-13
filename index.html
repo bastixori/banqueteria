@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO & Meta Tags -->
     <title>Postres Pimientaguayabita | Alta Repostería en Chile</title>
+    
     <meta name="description" content="Diseñamos obras de arte comestibles. Tortas personalizadas y postres premium para elevar tus celebraciones al máximo nivel en Chile.">
-    <meta property="og:title" content="Postres Pimientaguayabita">
-    <meta property="og:description" content="Alta Repostería y Tortas Personalizadas para eventos inolvidables.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bastixori.github.io/banqueteria/">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -23,193 +18,97 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Glows -->
-    <div class="glow-bg glow-1"></div>
-    <div class="glow-bg glow-2"></div>
+    
+    <div class="noise-overlay"></div>
 
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">
-            <span>Pimienta</span>guayabita<span class="dot">.</span>
-        </div>
-        
-        <!-- Desktop Nav -->
+        <div class="logo">Pimientaguayabita<span class="dot">.</span></div>
         <div class="nav-links desktop-nav">
-            <a href="#experiencia">Experiencia</a>
-            <a href="#creaciones">Creaciones</a>
-            <a href="#testimonios">Reseñas</a>
-            <a href="#faq">FAQ</a>
-            <a href="https://wa.me/56947301489" class="btn-outline">Reservar</a>
+            <a href="#creaciones">Colección</a>
+            <a href="#experiencia">El Arte</a>
+            <a href="https://wa.me/56947301489" class="btn-reservar">Contactar Chef</a>
         </div>
-
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-btn" aria-label="Toggle Menu">
-            <i class="ph ph-list"></i>
-        </button>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
     </nav>
 
-    <!-- Mobile Nav Container -->
     <div class="mobile-nav">
         <button class="close-menu-btn"><i class="ph ph-x"></i></button>
         <div class="mobile-nav-links">
-            <a href="#experiencia" class="mobile-link">Experiencia</a>
-            <a href="#creaciones" class="mobile-link">Creaciones</a>
-            <a href="#testimonios" class="mobile-link">Reseñas</a>
-            <a href="#faq" class="mobile-link">Preguntas Frecuentes</a>
-            <a href="https://wa.me/56947301489" class="btn-primary" style="margin-top: 2rem;">Hacer Pedido</a>
+            <a href="#creaciones" class="mobile-link">Colección</a>
+            <a href="#experiencia" class="mobile-link">El Arte</a>
+            <a href="https://wa.me/56947301489" class="mobile-link special">Hacer Pedido</a>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <header class="hero" id="experiencia">
-        <div class="hero-content">
-            <div class="badge fade-up">Alta Repostería en Chile</div>
-            <h1 class="fade-up delay-1">El arte de lo<br><span class="gradient-text">Inolvidable</span></h1>
-            <p class="fade-up delay-2">Diseñamos obras de arte comestibles. Tortas personalizadas y postres premium para elevar tus celebraciones al máximo nivel.</p>
-            <div class="hero-actions fade-up delay-3">
-                <a href="https://wa.me/56947301489" class="btn-primary">
-                    Crear mi Torta <i class="ph ph-arrow-right"></i>
-                </a>
-                <a href="#creaciones" class="btn-secondary">
-                    Ver Portafolio
-                </a>
-            </div>
+    <!-- Editorial Hero -->
+    <header class="hero">
+        <div class="hero-left">
+            <h1 class="reveal-text">Arte<br><span class="italic">Comestible</span></h1>
+            <p class="hero-desc reveal-fade delay-1">Elevamos la repostería a una forma de expresión de lujo. Diseños excepcionales, sabores inolvidables, hechos exclusivamente para tu celebración.</p>
+            <a href="https://wa.me/56947301489" class="btn-explore reveal-fade delay-2">Comenzar Diseño <i class="ph-bold ph-arrow-right"></i></a>
         </div>
-        <div class="hero-visual fade-up delay-2">
-            <div class="visual-card">
-                <div class="image-wrapper">
-                    <!-- Placeholder - Reemplazar la URL cuando haya fotos reales -->
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" alt="Torta Premium" class="hero-img">
-                </div>
-                <div class="visual-blur"></div>
-            </div>
-            <div class="floating-badge badge-1">
-                <i class="ph-fill ph-star"></i>
-                <span>Calidad Premium</span>
-            </div>
-            <div class="floating-badge badge-2">
-                <i class="ph-fill ph-magic-wand"></i>
-                <span>Diseño Único</span>
+        <div class="hero-right reveal-fade delay-2">
+            <div class="image-frame main-frame">
+                <img src="assets/hero-cake.jpg" alt="Luxury Wedding Cake" class="parallax-img">
+                <div class="frame-caption">Bodas y Galas</div>
             </div>
         </div>
     </header>
 
-    <!-- Showcase Section -->
-    <section id="creaciones" class="showcase">
-        <div class="section-header reveal">
-            <h2>Nuestras Creaciones</h2>
-            <p>Descubre la fusión perfecta entre diseño espectacular y sabor extraordinario.</p>
+    <!-- Bento Grid Showcase -->
+    <section id="creaciones" class="bento-section">
+        <div class="section-title reveal-fade">
+            <h2>Nuestra Colección</h2>
         </div>
-
-        <div class="grid">
-            <div class="card card-interactive reveal">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="card-icon">🍰</div>
-                    <h3>Bodas & Galas</h3>
-                    <p>Diseños sofisticados y pisos majestuosos para tu gran día. Personalización absoluta en cada detalle.</p>
+        
+        <div class="bento-grid">
+            <!-- Large Card -->
+            <div class="bento-item large reveal-fade">
+                <img src="assets/macarons.jpg" alt="Mesas de Postres" class="bento-img">
+                <div class="bento-overlay">
+                    <h3>Alta Costura en Postres</h3>
+                    <p>Mesas dulces premium, macarons artesanales y petit fours diseñados como joyas comestibles.</p>
+                    <a href="https://wa.me/56947301489"><i class="ph-fill ph-whatsapp-logo"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <!-- Tall Card -->
+            <div class="bento-item tall reveal-fade delay-1">
+                <img src="assets/chocolate-cake.jpg" alt="Gourmet Chocolate Cake" class="bento-img">
+                <div class="bento-overlay">
+                    <h3>Clásicos Renovados</h3>
+                    <p>Recetas tradicionales con un giro contemporáneo y vanguardista.</p>
                 </div>
             </div>
 
-            <div class="card card-interactive reveal delay-1">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="card-icon">🧁</div>
-                    <h3>Mesas de Dulces</h3>
-                    <p>Macarons, petit fours y cupcakes decorados que transforman cualquier espacio en un festín visual.</p>
-                </div>
-            </div>
-
-            <div class="card card-interactive reveal delay-2">
-                <div class="card-glow"></div>
-                <div class="card-content">
-                    <div class="card-icon">🎉</div>
-                    <h3>Eventos Temáticos</h3>
-                    <p>Hacemos realidad cualquier concepto para cumpleaños corporativos y fiestas privadas. Modelados 3D.</p>
-                </div>
+            <!-- Small Info Card -->
+            <div class="bento-item small text-card reveal-fade delay-2">
+                <i class="ph-thin ph-flower-lotus icon-huge"></i>
+                <h3>Detalles Absolutos</h3>
+                <p>Cada pétalo, cada textura y cada pincelada es creada meticulosamente a mano por nuestra Chef.</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="testimonials reveal">
-        <div class="section-header">
-            <h2>Experiencias</h2>
-            <p>Lo que dicen nuestros clientes de sus celebraciones.</p>
-        </div>
-        <div class="grid">
-            <div class="review-card glass-panel">
-                <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                <p>"La torta de mi boda fue un sueño hecho realidad. No solo era hermosa, sino que el sabor a frambuesa y chocolate estaba increíble."</p>
-                <h4>- María José T.</h4>
-            </div>
-            <div class="review-card glass-panel delay-1">
-                <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                <p>"Encargué una mesa de dulces para el evento de mi empresa. La presentación fue impecable y el servicio muy profesional. Recomendados 100%."</p>
-                <h4>- Carlos M. (Evento Corp.)</h4>
-            </div>
+    <!-- Editorial CTA -->
+    <section class="editorial-cta reveal-fade">
+        <div class="cta-content">
+            <h2 class="italic">Tu visión, horneada a la perfección.</h2>
+            <p>No hacemos simples tortas, diseñamos la pieza central de tu evento.</p>
+            <a href="https://wa.me/56947301489" class="btn-solid">Hablemos por WhatsApp</a>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq-section reveal">
-        <div class="section-header">
-            <h2>Preguntas Frecuentes</h2>
-            <p>Todo lo que necesitas saber antes de pedir.</p>
-        </div>
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>¿Con cuánto tiempo de anticipación debo hacer mi pedido?</h3>
-                    <i class="ph ph-caret-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Para tortas personalizadas y bodas recomendamos al menos 15-20 días de anticipación. Para mesas de dulces pequeñas, 7 días son suficientes.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>¿Hacen envíos a domicilio (Delivery)?</h3>
-                    <i class="ph ph-caret-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Sí, contamos con transporte especializado para asegurar que tu torta llegue en perfectas condiciones al lugar de tu evento. El costo depende de la comuna.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>¿Pueden replicar un diseño que vi en Pinterest?</h3>
-                    <i class="ph ph-caret-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>¡Claro! Puedes enviarnos tus imágenes de referencia por WhatsApp. Nos inspiramos en ellas, aunque siempre le damos nuestro toque único para que sea exclusivo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section reveal">
-        <div class="cta-box">
-            <h2>¿Tienes una idea en mente?</h2>
-            <p>Hablemos de tu próximo evento. Cuéntanos qué imaginas y nosotros lo horneamos.</p>
-            <a href="https://wa.me/56947301489" class="btn-primary large">
-                <i class="ph-fill ph-whatsapp-logo"></i> Chatear con la Chef
+    <footer>
+        <div class="footer-top">
+            <div class="logo">Pimientaguayabita<span class="dot">.</span></div>
+            <a href="https://www.instagram.com/pimientaguayabita_/" target="_blank" class="instagram-link">
+                Instagram <i class="ph-bold ph-arrow-up-right"></i>
             </a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="logo">
-                <span>Pimienta</span>guayabita<span class="dot">.</span>
-            </div>
-            <div class="socials">
-                <a href="https://www.instagram.com/pimientaguayabita_/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2026. Alta Repostería en Chile. Todos los derechos reservados.</p>
         </div>
-        <p class="copyright">© 2026 Postres Pimientaguayabita. Arte comestible. Chile.</p>
     </footer>
 
     <script src="script.js"></script>
