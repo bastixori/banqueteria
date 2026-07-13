@@ -131,9 +131,24 @@ footer { padding: 4rem 5%; border-top: 1px solid rgba(255,255,255,0.1); }
 @media (max-width: 768px) {
     .desktop-nav { display: none; }
     .mobile-menu-btn { display: block; }
-    .hero { flex-direction: column; text-align: left; padding-top: 150px; }
-    .hero-right { width: 100%; margin-top: 3rem; justify-content: center; }
+    .hero { flex-direction: column; text-align: left; padding-top: 120px; padding-bottom: 2rem; }
+    .hero-right { width: 100%; margin-top: 2rem; justify-content: center; }
     .image-frame { width: 100%; aspect-ratio: 4/5; }
+    .hero h1 { font-size: 3.2rem; }
+    .bento-section { padding: 4rem 5%; }
+    .editorial-cta { padding: 5rem 5%; }
+    .editorial-cta h2 { font-size: 2.5rem; }
+    .btn-solid { padding: 1rem 1.5rem; font-size: 1rem; width: 100%; }
+    
+    /* Achicar botones flotantes en móvil para no estorbar */
+    .floating-wa, .floating-ig {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+        bottom: 15px;
+    }
+    .floating-wa { left: 15px; }
+    .floating-ig { right: 15px; }
 }
 
 /* Floating Elements */
