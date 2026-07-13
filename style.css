@@ -95,8 +95,10 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 400; }
 .editorial-cta { padding: 10rem 5%; text-align: center; }
 .editorial-cta h2 { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: 1rem; }
 .editorial-cta p { color: var(--text-muted); font-size: 1.2rem; margin-bottom: 3rem; }
-.btn-solid { background: var(--text-main); color: var(--bg-dark); padding: 1.2rem 3rem; text-decoration: none; font-size: 1.1rem; border-radius: 50px; font-weight: 500; transition: transform 0.3s; display: inline-block; }
+.btn-solid { background: var(--text-main); color: var(--bg-dark); padding: 1.2rem 3rem; text-decoration: none; font-size: 1.1rem; border-radius: 50px; font-weight: 500; transition: transform 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; }
 .btn-solid:hover { transform: scale(1.05); }
+.btn-outline-ig { background: transparent; border: 1px solid var(--text-main); color: var(--text-main); }
+.btn-outline-ig:hover { background: rgba(255,255,255,0.1); }
 
 /* Footer */
 footer { padding: 4rem 5%; border-top: 1px solid rgba(255,255,255,0.1); }
