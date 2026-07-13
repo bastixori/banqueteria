@@ -3,74 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postres Pimientaguayabita | Tortas Personalizadas</title>
-    <meta name="description" content="Hacemos de tu evento una experiencia inolvidable. Tortas y postres personalizados de alta calidad.">
+    <title>Postres Pimientaguayabita | Alta Repostería</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+    <!-- Background Glows -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
 
-    <nav class="navbar glass">
-        <div class="logo">Pimientaguayabita<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#postres">Nuestros Postres</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>Pimienta</span>guayabita<span class="dot">.</span>
+        </div>
+        <div class="nav-links">
+            <a href="#experiencia">Experiencia</a>
+            <a href="#creaciones">Creaciones</a>
+            <a href="https://wa.me/56947301489" class="btn-outline">Reservar</a>
+        </div>
     </nav>
 
-    <header id="inicio" class="hero">
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="hero-content">
-            <h1>Dulces momentos,<br><span>recuerdos inolvidables</span></h1>
-            <p>Especialistas en tortas y postres personalizados para bodas, cumpleaños y eventos corporativos.</p>
-            <a href="https://wa.me/56947301489" target="_blank" class="btn btn-primary">Haz tu pedido hoy</a>
+            <div class="badge fade-up">Alta Repostería en Chile</div>
+            <h1 class="fade-up delay-1">El arte de lo<br><span class="gradient-text">Inolvidable</span></h1>
+            <p class="fade-up delay-2">Diseñamos obras de arte comestibles. Tortas personalizadas y postres premium para elevar tus celebraciones al máximo nivel.</p>
+            <div class="hero-actions fade-up delay-3">
+                <a href="https://wa.me/56947301489" class="btn-primary">
+                    Crear mi Torta <i class="ph ph-arrow-right"></i>
+                </a>
+                <a href="#creaciones" class="btn-secondary">
+                    Ver Portafolio
+                </a>
+            </div>
         </div>
-        <div class="hero-image glass">
-            <!-- Placeholder for a beautiful cake image -->
-            <div class="image-placeholder">🍰</div>
+        <div class="hero-visual fade-up delay-2">
+            <div class="visual-card">
+                <div class="cake-icon">🎂</div>
+                <div class="visual-blur"></div>
+            </div>
+            <div class="floating-badge badge-1">
+                <i class="ph-fill ph-star"></i>
+                <span>Calidad Premium</span>
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="ph-fill ph-magic-wand"></i>
+                <span>Diseño Único</span>
+            </div>
         </div>
     </header>
 
-    <section id="postres" class="products">
-        <h2 class="section-title">Nuestras Creaciones</h2>
-        <div class="product-grid">
-            <div class="product-card glass">
-                <div class="card-img" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">🎂</div>
-                <h3>Tortas Personalizadas</h3>
-                <p>Diseños únicos adaptados a la temática de tu evento. Sabores que enamoran.</p>
+    <!-- Showcase Section -->
+    <section id="creaciones" class="showcase">
+        <div class="section-header reveal">
+            <h2>Nuestras Creaciones</h2>
+            <p>Descubre la fusión perfecta entre diseño espectacular y sabor extraordinario.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card card-interactive reveal">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">🍰</div>
+                    <h3>Bodas & Galas</h3>
+                    <p>Diseños sofisticados y pisos majestuosos para tu gran día. Personalización absoluta.</p>
+                    <a href="#" class="card-link">Saber más <i class="ph ph-caret-right"></i></a>
+                </div>
             </div>
-            <div class="product-card glass">
-                <div class="card-img" style="background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);">🧁</div>
-                <h3>Mesas de Dulces</h3>
-                <p>Cupcakes, macarons y bocados finos para deleitar a tus invitados.</p>
+
+            <div class="card card-interactive reveal delay-1">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">🧁</div>
+                    <h3>Mesas de Dulces</h3>
+                    <p>Macarons, petit fours y cupcakes decorados que transforman cualquier espacio en un festín visual.</p>
+                    <a href="#" class="card-link">Saber más <i class="ph ph-caret-right"></i></a>
+                </div>
             </div>
-            <div class="product-card glass">
-                <div class="card-img" style="background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);">🥧</div>
-                <h3>Postres Clásicos</h3>
-                <p>Las recetas tradicionales con nuestro toque gourmet especial.</p>
+
+            <div class="card card-interactive reveal delay-2">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">🎉</div>
+                    <h3>Eventos Temáticos</h3>
+                    <p>Hacemos realidad cualquier concepto. Detalles precisos y modelados artesanales.</p>
+                    <a href="#" class="card-link">Saber más <i class="ph ph-caret-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="contact glass">
-        <div class="contact-info">
-            <h2>¿Listo para endulzar tu evento?</h2>
-            <p>Escríbenos por WhatsApp y diseñemos juntos el postre perfecto.</p>
-            <a href="https://wa.me/56947301489" target="_blank" class="btn btn-whatsapp">
-                💬 +56 947 301 489
+    <!-- CTA Section -->
+    <section class="cta-section reveal">
+        <div class="cta-box">
+            <h2>¿Tienes una idea en mente?</h2>
+            <p>Hablemos de tu próximo evento. Cuéntanos qué imaginas y nosotros lo horneamos.</p>
+            <a href="https://wa.me/56947301489" class="btn-primary large">
+                <i class="ph-fill ph-whatsapp-logo"></i> Chatear con la Chef
             </a>
-            <div class="social-links">
-                <a href="https://www.instagram.com/pimientaguayabita_/" target="_blank">Síguenos en Instagram @pimientaguayabita_</a>
-            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Postres Pimientaguayabita. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="logo">
+                <span>Pimienta</span>guayabita<span class="dot">.</span>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/pimientaguayabita_/"><i class="ph ph-instagram-logo"></i> Instagram</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Postres Pimientaguayabita. Arte comestible. Chile.</p>
     </footer>
 
     <script src="script.js"></script>

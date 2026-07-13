@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,26 +12,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simple scroll reveal animation for product cards
-const productCards = document.querySelectorAll('.product-card');
+// Scroll Reveal Animation (Intersection Observer)
+const revealElements = document.querySelectorAll('.reveal');
 
-const observerOptions = {
-    threshold: 0.1,
+const revealCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target); // Only animate once
+        }
+    });
+};
+
+const revealOptions = {
+    threshold: 0.15,
     rootMargin: "0px 0px -50px 0px"
 };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, observerOptions);
+const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
 
-productCards.forEach(card => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(50px)";
-    card.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-    observer.observe(card);
+revealElements.forEach(el => {
+    revealObserver.observe(el);
+});
+
+// Mouse tracking glow effect on cards
+const cards = document.querySelectorAll('.card-interactive');
+
+cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const glow = card.querySelector('.card-glow');
+        glow.style.left = `${x}px`;
+        glow.style.top = `${y}px`;
+    });
 });
