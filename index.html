@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pimienta Guayabita – El sabor que buscas | Repostería & Banquetería por Yermary</title>
+  <meta name="description" content="Pimienta Guayabita por Yermary: Pastelería artesanal de alta gama, tortas personalizadas, postres, banquetería corporativa, coffee breaks y cursos de repostería en Santiago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Persistent Floating Social Actions (Instagram above WhatsApp) -->
+  <div class="floating-actions">
+    <a href="https://www.instagram.com/pimientaguayabita_/" 
+       class="float-btn float-instagram" target="_blank" aria-label="Instagram @pimientaguayabita_">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/56947301489?text=Hola%20Yermary,%20quisiera%20cotizar%20un%20servicio%20de%20Pimienta%20Guayabita" 
+       class="float-btn float-whatsapp" target="_blank" aria-label="Cotizar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#inicio" class="nav-brand">
+        <div>
+          <span class="nav-logo-text">Pimienta Guayabita</span>
+          <span class="nav-logo-sub">EL SABOR QUE BUSCAS</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#caminos" class="nav-link">4 Caminos</a></li>
+        <li><a href="#tortas" class="nav-link">Tortas</a></li>
+        <li><a href="#postres" class="nav-link">Postres</a></li>
+        <li><a href="#banqueteria" class="nav-link">Banquetería</a></li>
+        <li><a href="#cursos" class="nav-link">Cursos</a></li>
+        <li><a href="#empresas" class="nav-link">Empresas</a></li>
+        <li><a href="#cotizacion" class="nav-link">Cotización</a></li>
+        <li><a href="#club" class="nav-link">Club Pimienta</a></li>
+        <li><a href="#yermary" class="nav-link">Sobre Yermary</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#cotizacion" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Cotizar Ahora</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-crown text-gold"></i> Pastelería & Banquetería Artesanal
+          </div>
+          <h1 class="hero-title">Pimienta Guayabita <br><span class="text-gold">El sabor que buscas</span></h1>
+          <p class="hero-description">
+            Tortas personalizadas inolvidables, exquisitas porciones y postres finos, banquetes de coffee break para tus momentos especiales y talleres donde compartimos el arte de crear.
+          </p>
+          <div class="hero-btns">
+            <a href="https://wa.me/56947301489?text=Hola%20Yermary!%20Quiero%20cotizar%20un%20pedido%20en%20Pimienta%20Guayabita" 
+               target="_blank" class="btn btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Cotiza por WhatsApp
+            </a>
+            <a href="#caminos" class="btn btn-outline">
+              Descubrir Servicios <i class="fas fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="assets/images/pimienta_hero.jpg" alt="Pimienta Guayabita Torta Artesanal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Los 4 Caminos de Pimienta Guayabita -->
+  <section class="caminos-section" id="caminos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tu Experiencia Dulce</span>
+        <h2 class="section-title">¿Qué deseas realizar hoy?</h2>
+        <p class="section-subtitle">Elige uno de nuestros cuatro caminos diseñados para acompañar cada etapa y celebración de tu vida.</p>
+      </div>
+
+      <div class="caminos-grid">
+        <!-- Camino 1 -->
+        <div class="camino-card" onclick="document.getElementById('tortas').scrollIntoView({behavior: 'smooth'})">
+          <div class="camino-icon">
+            <i class="fas fa-birthday-cake"></i>
+          </div>
+          <h3 class="camino-title">Comprar un Producto</h3>
+          <p class="camino-desc">Tortas personalizadas para tus fechas especiales, tortas por porción, pie de limón y tartaletas de temporada.</p>
+          <span class="camino-link">Ver catálogo <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <!-- Camino 2 -->
+        <div class="camino-card" onclick="document.getElementById('banqueteria').scrollIntoView({behavior: 'smooth'})">
+          <div class="camino-icon">
+            <i class="fas fa-glass-cheers"></i>
+          </div>
+          <h3 class="camino-title">Cotizar un Evento</h3>
+          <p class="camino-desc">Servicios completos de banquetería, desayunos especiales, cumpleaños y celebraciones familiares memorables.</p>
+          <span class="camino-link">Ver Banquetería <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <!-- Camino 3 -->
+        <div class="camino-card" onclick="document.getElementById('cursos').scrollIntoView({behavior: 'smooth'})">
+          <div class="camino-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="camino-title">Inscribirse en un Curso</h3>
+          <p class="camino-desc">Aprende los secretos del bizcocho perfecto, decoración de tortas y galletas glaseadas en nuestros talleres.</p>
+          <span class="camino-link">Ver Academia <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <!-- Camino 4 -->
+        <div class="camino-card" onclick="document.getElementById('empresas').scrollIntoView({behavior: 'smooth'})">
+          <div class="camino-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="camino-title">Coffee Break Empresas</h3>
+          <p class="camino-desc">Servicio corporativo de primer nivel, regalos institucionales con logo y catering empresarial.</p>
+          <span class="camino-link">Servicios B2B <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Tortas Personalizadas -->
+  <section class="products-section" id="tortas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Diseños Exclusivos</span>
+        <h2 class="section-title">🎂 Tortas Personalizadas</h2>
+        <p class="section-subtitle">Creadas artesanalmente con los mejores ingredientes y diseños únicos adaptados a tu historia.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">Todas las Galerías</button>
+        <button class="tab-btn" data-filter="cumpleanos">Cumpleaños</button>
+        <button class="tab-btn" data-filter="bautizos">Bautizos</button>
+        <button class="tab-btn" data-filter="matrimonios">Matrimonios</button>
+        <button class="tab-btn" data-filter="empresas">Empresas</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-card" data-category="cumpleanos">
+          <div class="product-img-wrap">
+            <img src="assets/images/pimienta_torta_cumple.jpg" alt="Torta Cumpleaños Especial">
+            <span class="product-tag">Cumpleaños</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Torta Cumpleaños Luxury</h3>
+            <p class="product-desc">Decoración en buttercream, macarons hechos en casa, detalles dorados y bizcocho húmedo a elección.</p>
+            <div class="product-footer">
+              <span class="product-price">Desde 15-20 Porciones</span>
+              <button class="btn btn-outline" onclick="selectServiceForQuote('Torta Cumpleaños Luxury')" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" data-category="matrimonios">
+          <div class="product-img-wrap">
+            <img src="assets/images/pimienta_torta_matrimonio.jpg" alt="Torta Matrimonio">
+            <span class="product-tag">Matrimonios</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Torta Nupcial Elegance</h3>
+            <p class="product-desc">Construcción en múltiples pisos con flores comestibles hechas a mano, acabados en pan de oro y rellenos gourmet.</p>
+            <div class="product-footer">
+              <span class="product-price">Diseños Personalizados</span>
+              <button class="btn btn-outline" onclick="selectServiceForQuote('Torta Matrimonio Elegance')" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" data-category="bautizos">
+          <div class="product-img-wrap">
+            <img src="assets/images/real_1.jpg" alt="Torta Bautizo Especial">
+            <span class="product-tag">Bautizos</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Torta Bautizo & Baby Shower</h3>
+            <p class="product-desc">Colores suaves en tonos pastel, modelado en azúcar y sabor delicado de manjar blanco, frutos rojos o maracuyá.</p>
+            <div class="product-footer">
+              <span class="product-price">Personalizable</span>
+              <button class="btn btn-outline" onclick="selectServiceForQuote('Torta Bautizo')" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" data-category="empresas">
+          <div class="product-img-wrap">
+            <img src="assets/images/real_2.jpg" alt="Torta Corporativa con Logo">
+            <span class="product-tag">Empresas</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Torta Corporativa Aniversario</h3>
+            <p class="product-desc">Diseño exclusivo adaptado a la identidad corporativa de tu marca, impresión comestible de alta definición y acabado profesional.</p>
+            <div class="product-footer">
+              <span class="product-price">Formato Eventos</span>
+              <button class="btn btn-outline" onclick="selectServiceForQuote('Torta Corporativa')" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card" data-category="cumpleanos">
+          <div class="product-img-wrap">
+            <img src="assets/images/real_3.jpg" alt="Torta Infantil Temática">
+            <span class="product-tag">Cumpleaños</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Torta Temática Creativa</h3>
+            <p class="product-desc">Modelados especiales de personajes, texturas creativas y combinaciones de sabores favoritas de los festejados.</p>
+            <div class="product-footer">
+              <span class="product-price">Diseños a Pedido</span>
+              <button class="btn btn-outline" onclick="selectServiceForQuote('Torta Temática Infantil')" style="padding: 8px 16px; font-size: 0.85rem;">Cotizar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Tortas por Porción y Postres -->
+  <section class="postres-section" id="postres">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Delicias Individuales</span>
+        <h2 class="section-title">🍰 Tortas por Porción y Postres Tradicionales</h2>
+        <p class="section-subtitle">Para tus antojos del día a día, reuniones íntimas o mesas de dulces en tus eventos.</p>
+      </div>
+
+      <div class="postres-grid">
+        <!-- Postre 1 -->
+        <div class="postre-card">
+          <img src="assets/images/pimienta_postres.jpg" class="postre-img" alt="Pie de Limón">
+          <h3>Pie de Limón Merengue</h3>
+          <p class="product-desc">Base crujiente de masa sablé, crema ácida de limón natural y coposo merengue suizo dorado al fuego.</p>
+          <button class="btn btn-outline" onclick="selectServiceForQuote('Pie de Limón')" style="width: 100%; margin-top: 10px;">Solicitar</button>
+        </div>
+
+        <!-- Postre 2 -->
+        <div class="postre-card">
+          <img src="assets/images/real_4.jpg" class="postre-img" alt="Kuchen Tradicional">
+          <h3>Kuchen Tradicional</h3>
+          <p class="product-desc">Manzana del sur con canela o nueces, o kuchen de frambuesa con miga crocante artesanal.</p>
+          <button class="btn btn-outline" onclick="selectServiceForQuote('Kuchen Tradicional')" style="width: 100%; margin-top: 10px;">Solicitar</button>
+        </div>
+
+        <!-- Postre 3 -->
+        <div class="postre-card">
+          <img src="assets/images/real_5.jpg" class="postre-img" alt="Tartaleta de Frutas">
+          <h3>Tartaletas de Fruta de Estación</h3>
+          <p class="product-desc">Rellenas de suave crema pastelera artesanal y coronadas con fruta fresca de temporada seleccionada.</p>
+          <button class="btn btn-outline" onclick="selectServiceForQuote('Tartaletas de Fruta')" style="width: 100%; margin-top: 10px;">Solicitar</button>
+        </div>
+
+        <!-- Postre 4 -->
+        <div class="postre-card">
+          <img src="assets/images/real_6.jpg" class="postre-img" alt="Tortas por Porción">
+          <h3>Tortas por Porción Trio</h3>
+          <p class="product-desc">Porciones individuales de Tres Leches, Torta Amor y Chocolate Fudge para tus mesas de postre.</p>
+          <button class="btn btn-outline" onclick="selectServiceForQuote('Porciones de Torta')" style="width: 100%; margin-top: 10px;">Solicitar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Banquetería y Coffee Break -->
+  <section class="catering-section" id="banqueteria">
+    <div class="container">
+      <div class="catering-grid">
+        <div class="catering-content">
+          <span class="section-tag">Eventos & Catering</span>
+          <h2 class="section-title">☕ Banquetería y Coffee Break Exclusivo</h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px;">
+            En Pimienta Guayabita nos encargamos de que la experiencia gastronómica de tu evento sea impecable, con una combinación balanceada de preparaciones dulces y saladas.
+          </p>
+
+          <ul class="catering-features">
+            <li>
+              <div class="catering-icon"><i class="fas fa-coffee"></i></div>
+              <span><strong>Coffee Breaks Corporativos:</strong> Estación completa de café, variedad de tés, jugos naturales y tapaditos finos.</span>
+            </li>
+            <li>
+              <div class="catering-icon"><i class="fas fa-sun"></i></div>
+              <span><strong>Desayunos Especiales:</strong> Sorprende a tu equipo o seres queridos en sus cumpleaños y aniversarios.</span>
+            </li>
+            <li>
+              <div class="catering-icon"><i class="fas fa-heart"></i></div>
+              <span><strong>Eventos Familiares:</strong> Bautizos, primera comunión, cumpleaños y aniversarios con montaje a medida.</span>
+            </li>
+          </ul>
+
+          <a href="#cotizacion" class="btn btn-primary" onclick="selectServiceForQuote('Banquetería y Coffee Break')">
+            <i class="fas fa-calculator"></i> Cotizar Servicio de Banquetería
+          </a>
+        </div>
+
+        <div class="catering-gallery">
+          <img src="assets/images/pimienta_coffeebreak.jpg" alt="Montaje Coffee Break Corporativo">
+          <img src="assets/images/real_7.jpg" alt="Servicio Dulce y Salado">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Academia Cursos Yermary -->
+  <section class="cursos-section" id="cursos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Aprende & Emprende</span>
+        <h2 class="section-title">👩‍🏫 Academia de Repostería con Yermary</h2>
+        <p class="section-subtitle">
+          "No solo vendemos productos, también enseñamos con pasión. Queremos guiarte para que crees tus propias obras de arte o inicies tu propio negocio."
+        </p>
+      </div>
+
+      <div class="cursos-grid">
+        <!-- Curso 1 -->
+        <div class="curso-card">
+          <img src="assets/images/pimienta_cursos.jpg" class="curso-img" alt="Curso de Bizcochos">
+          <div class="curso-body">
+            <span class="curso-badge">Presencial / Online</span>
+            <h3>Curso de Bizcochos para Emprender</h3>
+            <p class="product-desc">Aprende la química de los bizcochos esponjosos, técnicas de horneado perfecto, humectación y rellenos estables comercialmente.</p>
+          </div>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="curso-card">
+          <img src="assets/images/pimienta_torta_cumple.jpg" class="curso-img" alt="Decoración de Tortas">
+          <div class="curso-body">
+            <span class="curso-badge">Taller Intensivo</span>
+            <h3>Decoración de Tortas de Alta Gama</h3>
+            <p class="product-desc">Dominio del buttercream perfecto, bordes filosos, alisado impecable, manejo de manga pastelera y aplicación de pan de oro.</p>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="curso-card">
+          <img src="assets/images/pimienta_empresas.jpg" class="curso-img" alt="Galletas Glaseadas">
+          <div class="curso-body">
+            <span class="curso-badge">Presencial</span>
+            <h3>Galletas Glaseadas & Royal Icing</h3>
+            <p class="product-desc">Masa que no pierde la forma al hornearse, consistencias de glaseado royal icing, delineado, volumen y secado sin imperfecciones.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead Capture Form for Future Courses -->
+      <div class="info-curso-box">
+        <h3><i class="fas fa-envelope-open-text"></i> ¿Quieres ser la primera persona en enterarte de las nuevas fechas?</h3>
+        <p>Déjanos tus datos y te enviaremos la agenda de talleres presenciales y lanzamientos de nuestros cursos online antes que al público general.</p>
+
+        <form id="cursoForm" class="info-curso-form">
+          <input type="text" id="cursoNombre" placeholder="Tu Nombre completo *" required>
+          <input type="email" id="cursoEmail" placeholder="Tu Correo electrónico *" required>
+          <input type="tel" id="cursoPhone" placeholder="Tu WhatsApp">
+          <button type="submit" class="btn btn-primary">
+            Quiero recibir información de los próximos cursos
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Servicios a Empresas (B2B) -->
+  <section class="empresas-section" id="empresas">
+    <div class="container">
+      <div class="empresas-grid">
+        <div>
+          <span class="section-tag">Soluciones B2B</span>
+          <h2 class="section-title">🏢 Servicios Corporativos & Empresas</h2>
+          <p class="section-subtitle" style="text-align: left; margin-bottom: 25px;">
+            Acompañamos a tu empresa en aniversarios, lanzamientos de marca, regalos de fin de año y capacitaciones con una propuesta pastelera de primer nivel.
+          </p>
+
+          <a href="#cotizacion" class="btn btn-primary" onclick="selectServiceForQuote('Servicio Empresas')">
+            <i class="fas fa-file-signature"></i> Solicitar Cotización Empresa
+          </a>
+        </div>
+
+        <div class="empresas-cards">
+          <div class="empresa-item-card">
+            <i class="fas fa-mug-hot"></i>
+            <h4>Coffee Break Corporativo</h4>
+            <p class="product-desc">Montajes elegantes con atención personalizada para reuniones de directorio o talleres.</p>
+          </div>
+
+          <div class="empresa-item-card">
+            <i class="fas fa-gift"></i>
+            <h4>Regalos Corporativos</h4>
+            <p class="product-desc">Cajas de regalo con delicados dulces preparados para impresionar a tus clientes y colaboradores.</p>
+          </div>
+
+          <div class="empresa-item-card">
+            <i class="fas fa-cookie-bite"></i>
+            <h4>Galletas con Logo</h4>
+            <p class="product-desc">Galletas glaseadas impresas con el logo institucional en empaques individuales.</p>
+          </div>
+
+          <div class="empresa-item-card">
+            <i class="fas fa-award"></i>
+            <h4>Tortas Celebración</h4>
+            <p class="product-desc">Celebraciones de metas alcanzadas y aniversarios de la compañía.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Formulario Completo de Cotización -->
+  <section class="cotizacion-section" id="cotizacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Presupuesto sin Compromiso</span>
+        <h2 class="section-title">📝 Formulario de Cotización</h2>
+        <p class="section-subtitle">Completa los detalles de tu evento y te enviaremos una propuesta personalizada directamente a tu WhatsApp.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="cotizacionForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cotNombre">Nombre Completo *</label>
+              <input type="text" id="cotNombre" placeholder="Ej: María González" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cotWhatsapp">WhatsApp / Teléfono *</label>
+              <input type="tel" id="cotWhatsapp" placeholder="Ej: +56 9 4730 1489" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cotCorreo">Correo Electrónico</label>
+              <input type="email" id="cotCorreo" placeholder="maria@ejemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="cotComuna">Comuna de Entrega / Evento</label>
+              <input type="text" id="cotComuna" placeholder="Ej: Las Condes, Santiago, Providencia">
+            </div>
+
+            <div class="form-group">
+              <label for="cotCumple">Tu Fecha de Cumpleaños</label>
+              <input type="date" id="cotCumple">
+            </div>
+
+            <div class="form-group">
+              <label for="cotFechaEvento">Fecha del Evento o Entrega *</label>
+              <input type="date" id="cotFechaEvento" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cotServicio">Tipo de Servicio *</label>
+              <select id="cotServicio" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="Torta Personalizada">Torta Personalizada (Cumpleaños / Evento)</option>
+                <option value="Torta Matrimonio">Torta de Matrimonio</option>
+                <option value="Postres y Tortas por Porción">Tortas por Porción & Postres</option>
+                <option value="Coffee Break / Banquetería">Coffee Break & Banquetería</option>
+                <option value="Servicio para Empresa">Servicios para Empresa (B2B)</option>
+                <option value="Inscripción / Info Cursos">Información de Cursos</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cotPresupuesto">Presupuesto Estimado ($ CLP)</label>
+              <input type="text" id="cotPresupuesto" placeholder="Ej: $40.000 - $70.000">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="cotComentarios">Comentarios, Sabores de Preferencia o Detalles del Pedido</label>
+              <textarea id="cotComentarios" rows="4" placeholder="Cuéntanos el número de invitados, temática de la torta, restricción alimentaria o cualquier solicitud especial..."></textarea>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 35px;">
+            <button type="submit" class="btn btn-whatsapp" style="padding: 16px 36px; font-size: 1.1rem;">
+              <i class="fab fa-whatsapp"></i> Generar Cotización e Iniciar Chat en WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Club Pimienta -->
+  <section class="club-section" id="club">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Comunidad Exclusiva</span>
+        <h2 class="section-title">🎁 Únete al Club Pimienta</h2>
+        <p class="section-subtitle">
+          Regístrate de forma gratuita para formar parte de nuestra comunidad y disfrutar de beneficios especiales pensados para nuestros clientes más fieles.
+        </p>
+      </div>
+
+      <div class="club-grid">
+        <div class="club-feature">
+          <div class="club-feature-icon">🎂</div>
+          <h4>Saludo & Regalo de Cumpleaños</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Recibe un detalle especial e incentivo exclusivo durante el mes de tu cumpleaños.</p>
+        </div>
+
+        <div class="club-feature">
+          <div class="club-feature-icon">🎁</div>
+          <h4>Promociones Exclusivas</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Descuentos privados solo para los miembros del club.</p>
+        </div>
+
+        <div class="club-feature">
+          <div class="club-feature-icon">📢</div>
+          <h4>Agenda Abierta Anticipada</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Asegura los cupos de agenda para fechas clave (Día de la Madre, Navidad, etc.) antes que el público general.</p>
+        </div>
+
+        <div class="club-feature">
+          <div class="club-feature-icon">🍰</div>
+          <h4>Lanzamientos de Productos</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Sé el primero en probar nuestras nuevas recetas de temporada.</p>
+        </div>
+
+        <div class="club-feature">
+          <div class="club-feature-icon">👩‍🏫</div>
+          <h4>Info y Beneficios en Cursos</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Descuentos en matrículas para nuestros talleres presenciales y cursos online.</p>
+        </div>
+
+        <div class="club-feature">
+          <div class="club-feature-icon">🎄</div>
+          <h4>Fechas Especiales</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">Packs temáticos exclusivos para San Valentín, Fiestas Patrias y Fin de Año.</p>
+        </div>
+      </div>
+
+      <div class="club-form-box">
+        <h3 style="color: var(--primary); margin-bottom: 15px;">Únete en segundos</h3>
+        <form id="clubForm" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+          <input type="email" id="clubEmail" placeholder="Tu correo electrónico *" required style="padding: 12px 20px; border-radius: 99px; border: 1px solid var(--border-light); background: #1C1C1C; color: #FFF; flex: 1; min-width: 240px;">
+          <input type="date" id="clubCumple" title="Tu Fecha de Cumpleaños" style="padding: 12px 20px; border-radius: 99px; border: 1px solid var(--border-light); background: #1C1C1C; color: #FFF;">
+          <button type="submit" class="btn btn-primary">Quiero unirme</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Sobre Yermary -->
+  <section class="about-section" id="yermary">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/images/pimienta_yermary.jpg" alt="Chef Pastelería Yermary">
+          <div class="about-experience-badge">
+            <span>Yermary</span>
+            Fundadora & Master Pastry
+          </div>
+        </div>
+
+        <div>
+          <span class="section-tag">Nuestra Historia</span>
+          <h2 class="section-title">👩‍🍳 Detrás de Pimienta Guayabita</h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px;">
+            ¡Hola! Soy <strong>Yermary</strong>. Pimienta Guayabita nació de la pasión por transformar ingredientes nobles en momentos de felicidad inolvidables para las familias y empresas.
+          </p>
+          <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 25px; line-height: 1.7;">
+            Cada torta, postre o estación de coffee break cuenta una historia única. Para mí, la repostería va más allá del azúcar: se trata de crear recuerdos, celebrar logros y transmitir emociones verdaderas en cada bocado.
+          </p>
+
+          <div style="background: var(--bg-main); border-left: 4px solid var(--primary); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 30px; border-top: 1px solid var(--border-light); border-right: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 8px;">Nuestra Visión de Futuro</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Hoy puedes encontrar en un solo lugar todo lo que necesitas: 
+              <br>🍰 <strong>Comprar un producto artesanal</strong>
+              <br>🎉 <strong>Cotizar la banquetería de tu evento</strong>
+              <br>👩‍🏫 <strong>Aprender en nuestra academia</strong>
+              <br>🏢 <strong>Atender las necesidades corporativas de tu empresa</strong>
+            </p>
+          </div>
+
+          <a href="https://www.instagram.com/pimientaguayabita_/" target="_blank" class="btn btn-outline">
+            <i class="fab fa-instagram"></i> Síguenos en Instagram @pimientaguayabita_
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Pimienta Guayabita</div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 320px;">
+            Pastelería artesanal de alta gama, banquetería exclusiva, coffee breaks corporativos y la mejor academia de repostería por Yermary.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/pimientaguayabita_/" target="_blank" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/56947301489" target="_blank" class="social-link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#caminos">4 Caminos</a></li>
+            <li><a href="#tortas">Tortas Personalizadas</a></li>
+            <li><a href="#postres">Porciones y Postres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#banqueteria">Banquetería & Coffee Break</a></li>
+            <li><a href="#cursos">Academia de Cursos</a></li>
+            <li><a href="#empresas">Soluciones Empresas</a></li>
+            <li><a href="#club">Club Pimienta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contacto & Cotizaciones</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt text-gold"></i> Santiago, Chile</li>
+            <li><i class="fab fa-whatsapp text-gold"></i> +56 9 4730 1489</li>
+            <li><i class="fab fa-instagram text-gold"></i> @pimientaguayabita_</li>
+            <li><i class="fas fa-clock text-gold"></i> Agenda tu pedido con anticipación</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pimienta Guayabita – El sabor que buscas. Creado por Yermary. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
